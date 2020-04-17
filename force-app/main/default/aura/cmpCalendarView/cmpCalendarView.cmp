@@ -1,0 +1,47 @@
+<!--
+  @File Name          : cmpCalendarView.cmp
+  @Description        : 
+  @Author             : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Group              : 
+  @Last Modified By   : ChangeMeIn@UserSettingsUnder.SFDoc
+  @Last Modified On   : 17-4-2020 09:22:06
+  @Modification Log   : 
+  Ver       Date            Author      		    Modification
+  1.0    16-4-2020   ChangeMeIn@UserSettingsUnder.SFDoc     Initial Version
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes" access="global">
+  <!-- <ltng:require scripts="{!$Resource.FullCalendar + '/core/main.js'}"
+    afterScriptsLoaded="{!c.scriptsLoaded}">
+    </ltng:require>-->
+  <!-- <ltng:require scripts="{!join(',',
+                                        $Resource.FullCalendar + '/core/main.js',
+                                        $Resource.FullCalendar + '/interaction/main.js',
+                                        $Resource.FullCalendar + '/daygrid/main.js',
+                                        $Resource.FullCalendar + '/timegrid/main.js',
+                                        $Resource.FullCalendar + '/list/main.js')}" 
+                    styles="{!join(',',
+                                        $Resource.FullCalendar + '/core/main.css',
+                                        $Resource.FullCalendar + '/daygrid/main.css',
+                                        $Resource.FullCalendar + '/timegrid/main.css',
+                                        $Resource.FullCalendar + '/list/main.css')}" 
+                    afterScriptsLoaded="{!c.scriptsLoaded}" />-->
+  <ltng:require scripts="{!join(',',  
+                           $Resource.FullCalendarJquery, 
+                           $Resource.FullcalendarMomentMinJS,
+                           $Resource.FullCalendarMinJs,
+                           $Resource.FullCalendarJS)}" styles="{!$Resource.FullCalendarMinCSS}"
+    afterScriptsLoaded="{!c.scriptsLoaded}" />
+  <!--<ltng:require scripts="{!join(',', 
+                           $Resource.FullCalendar + '/FullCalender (1)/FullCalender/jquery.min.js', 
+                           $Resource.FullCalendar + '/FullCalender (1)/FullCalender/moment.min.js', 
+                           $Resource.FullCalendar + '/FullCalender (1)/FullCalender/fullcalendar.min.js')}"
+                  styles="{!$Resource.FullCalendar + '/FullCalender (1)/FullCalender/fullcalendar.min.css'}"
+     afterScriptsLoaded="{!c.scriptsLoaded}" />-->
+  <!-- <ltng:require styles="/resource/FullCalendar/FullCalender (1)/FullCalender/fullcalendar.min.css"
+                  scripts='/resource/FullCalendar/FullCalender (1)/FullCalender/jquery.min.js,
+                          /resource/FullCalendar/FullCalender (1)/FullCalender/moment.min.js,
+                           /resource/FullCalendar/FullCalender (1)/FullCalender/fullcalendar.min.js'
+                  afterScriptsLoaded="{!c.scriptsLoaded}" />-->
+
+  <div id="calendar"></div>
+</aura:component>
